@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Frutas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1 class="card-title">Descubra a Fruta</h1>
+            <p class="card-description">Digite um número de 1 a 4 para revelar a fruta correspondente no nosso cesto mágico.</p>
+            
+            <div class="input-group">
+                <input type="number" id="frutaInput" min="1" max="4" placeholder="Digite 1, 2, 3 ou 4" class="input-field">
+                <button id="revelarBtn" class="btn">Revelar</button>
+            </div>
+            
+            <div id="resultado" class="resultado-box">
+                <span class="placeholder">A fruta aparecerá aqui...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
