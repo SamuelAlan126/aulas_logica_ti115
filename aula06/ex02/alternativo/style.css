@@ -1,0 +1,74 @@
+:root {
+    --bg-color: #e0e5ec;
+    --main-color: #c0c5cc;
+    --shadow-light: #ffffff;
+    --shadow-dark: #a3b1c6;
+    --text-color: #6d7383;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculator-container {
+    background-color: var(--main-color);
+    padding: 40px 50px;
+    border-radius: 25px;
+    box-shadow: 
+        10px 10px 30px var(--shadow-dark),
+        -10px -10px 30px var(--shadow-light);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #4b5262;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 
+        7px 7px 15px var(--shadow-dark),
+        -7px -7px 15px var(--shadow-light);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    color: #3f4657;
+    transform: translateY(-2px);
+    box-shadow: 
+        10px 10px 20px var(--shadow-dark),
+        -10px -10px 20px var(--shadow-light);
+}
+
+button:active {
+    box-shadow: 
+        inset 5px 5px 10px var(--shadow-dark),
+        inset -5px -5px 10px var(--shadow-light);
+    transform: translateY(0);
+}
