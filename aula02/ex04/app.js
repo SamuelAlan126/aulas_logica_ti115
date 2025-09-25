@@ -1,5 +1,5 @@
 let idade = parseInt(prompt("Informe sua idade:"))
-let acompanhante = true
+let acompanhante = false
 if(idade >= 18){
     alert("Pode entrar")
 } else if (idade >=16 && acompanhante == true) {
