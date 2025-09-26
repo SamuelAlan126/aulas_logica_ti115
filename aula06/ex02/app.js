@@ -25,15 +25,34 @@ console.log(subtracao(5, 7));
 let valor1 = parseFloat(prompt("Digite o Valor 1:"))
 let valor2 = parseFloat(prompt("Digite o Valor 2:"))
 
-function calculadora(a, b){
+if( !isNaN(valor1) && !isNaN(valor2)){
+    const resultado = calculadora(valor1, valor2)
     alert(`
-        Soma = ${a, b} \n
-        Subt = ${a - b} \n
-        Mult = ${a * b} \n 
-        Div = ${a / b} \n
-        `)
-    return
+    Soma = ${resultado.soma}\n
+    Subt = ${resultado.subtracao}\n
+    Mult = ${resultado.multiplicacao}\n
+    Div = ${resultado.divisao}\n
+    `)
+} else {
+    alert("Digite apenas numeros! aff")
 }
 
-calculadora(valor1, valor2)
+function calculadora(a, b){
+
+    let resuntadoDivisao;
+    if(b === 0){
+        resuntadoDivisao = "Hello world"
+    } else {
+        resuntadoDivisao = a / b
+    }
+
+    return {
+        soma: a+b,
+        subtracao: a-b,
+        multiplicacao: a*b,
+        divisao: resuntadoDivisao
+    }
+    
+}
+
 
